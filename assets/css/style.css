@@ -1,0 +1,237 @@
+/* font import */
+
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap');
+/* Pour navbar : font-family: 'Akaya Kanadaka', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lobster+Two&display=swap');
+/* font-family: 'Dancing Script', cursive; Pour messages sympa */
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&family=Poppins:wght@100&display=swap');
+/* font-family: 'Lobster Two', cursive; Pour les textes */
+
+/* reset */
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Setup */
+
+body {
+    font-size: 1.5rem;
+    font-family: 'Lobster Two', cursive;
+    background-color: #181818;
+    color: wheat;
+}
+
+/* Navbar */
+.currentPage {
+    text-decoration: underline;
+}
+
+nav {
+    background-color: rgba(33, 33, 33, 0.98);
+    height: 10vh;
+    min-height: 87px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.7rem;
+}
+
+nav>a {
+    text-decoration: none;
+    color: wheat;
+}
+
+nav>div {
+    height: 45%;
+    width: 25%;
+    min-width: 300px;
+}
+
+nav div>form {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+nav div form>input {
+    width: 100%;
+    height: 100%;
+    font-size: 1.1rem;
+    border-radius: 3px;
+}
+
+nav div form>button {
+    width: 70px;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+nav>ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    padding: 10px;
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: wheat;
+}
+
+nav>button {
+    display: none;
+    background-color: #F5F5F5;
+}
+
+/* Responsive Navbar*/
+
+@media screen and (max-width: 1100px) {
+    nav {
+        background-color: rgba(33, 33, 33, 0.98);
+        height: 10vh;
+        min-height: 87px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 1.7rem;
+    }
+
+    nav>div {
+        position: absolute;
+        bottom: 0;
+        height: 60px;
+        width: 100%;
+        min-width: 120px;
+        display: flex;
+    }
+
+    nav div form>input {
+        width: 100%;
+        height: 100%;
+        font-size: 1.1rem;
+        border-radius: 3px;
+        text-align: center;
+        background-color: transparent;
+        color: wheat;
+    }
+
+    nav div form>button {
+        opacity: 0.2;
+        width: 70px;
+        cursor: pointer;
+        border-radius: 2px;
+        background-color: transparent;
+        color: white;
+    }
+
+    nav>ul {
+        display: none;
+    }
+
+    nav>button {
+        display: block;
+        height: 70%;
+        width: 70px;
+        background-color: transparent;
+        margin-right: 10px;
+        color: wheat;
+    }
+}
+
+/* page de connexion */
+
+#container_connexion {
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 65% 1fr;
+    grid-template-rows: auto 1fr auto;
+}
+
+#container_connexion header {
+    grid-column: 1 / 4;
+}
+
+#container_connexion main {
+    grid-column: 2 / 3;
+}
+
+#container_connexion form {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#container_connexion .titre{
+    /* border: cornflowerblue 2px solid; */
+    width: 50%;
+    text-align: center;
+}
+
+#container_connexion form div.titre > p {
+    color: white;
+    text-align: end;
+    font-family: 'Dancing Script';
+    font-size: 1.7rem;
+}
+
+#container_connexion .input_size {
+    width: 30%;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#container_connexion .flex_input {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+#container_connexion .flex_input > label {
+    margin-bottom: 5px;
+}
+
+#container_connexion input {
+    line-height: 30px;
+    background-color: #292929;
+    border-color: #1F1F1F;
+}
+
+#container_connexion div.flex_input > span {
+    color: #D1604D;
+    font-family: 'Dancing Script';
+    text-align: center;
+}
+
+#container_connexion button {
+    height: 50px;
+    width: 130px;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    border-color: white;
+    color: white;
+    background-color: #181818;
+}
+
+#container_connexion footer {
+    grid-column: 2 / 3;
+    text-align: center;
+    padding: 15px;
+}
+
+#container_connexion footer a {
+    color: #D56F5D;
+}
+
