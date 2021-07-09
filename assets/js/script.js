@@ -34,5 +34,15 @@ function check_empty_input(input, element) {
     })
 }
 
+function check_symbol(input, element) {
+    input.addEventListener('input', () => {
+        if (input.include('$')) {
+            element.innerText = "les symboles $ sont interdits";
+        }
+    })
+}
+
+check_symbol(mail_connexion, error_mail_connexion);
+
 check_empty_input(mail_connexion, error_mail_connexion);
 check_empty_input(password_connexion, error_password_connexion);

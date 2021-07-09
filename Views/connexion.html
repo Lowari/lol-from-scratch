@@ -16,7 +16,7 @@
     <div id="container_connexion">
         <header>
             <nav>
-                <a href="../index.html"><span>Logo</span></a>
+                <a href="../index.html" id="logo_navbar"><span>Logo</span></a>
                 <div>
                     <form action="index.php" method="POST" hidden>
                         <input type="search" placeholder="Rechercher" hidden disabled>
@@ -53,7 +53,7 @@
                     </div class="input_size">
                 </div>
                 <div>
-                    <button type="button">Se connecter</button>
+                    <button type="button" id="connect">Se connecter</button>
                 </div>
             </form>
         </main>
@@ -62,7 +62,16 @@
             <p>Pas encore inscrit ?</p>
             <a href="#">Je m'inscrit !</a>
         </footer>
+
+        <aside id="img1_left_connexion">
+            <img src="../assets/img/yasuo2.jpg" alt="Jinx en mode relax">
+        </aside>
+        <aside id="img2_right_connexion">
+            <img src="../assets/img/yasuo.jpg" alt="">
+        </aside>
     </div>
+
+    
 
     <script src="../assets/js/script.js"></script>
 </body>
