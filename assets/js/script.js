@@ -7,7 +7,7 @@ const regexSymbol = /[-!$%^&*()_+|~=`{}\[\]:";'<>?,.\/]/;
 const links = document.getElementsByTagName('a');
 
 for (i = 0; i < links.length; i++) {
-    link = links[i];
+    var link = links[i];
     if (link.href.match(document.location.href)) {
         this.link.classList.add('currentPage');
     }
@@ -33,7 +33,7 @@ check_symbol(mail_connexion, error_mail_connexion);
  * @param {HTMLElement} element element où inscrire le message
  */
 
- function check_empty_input(input, element) {
+function check_empty_input(input, element) {
     input.addEventListener('focusout', (e) => {
         if (e.target.value == '') {
             element.innerText = "le champ est vide";
