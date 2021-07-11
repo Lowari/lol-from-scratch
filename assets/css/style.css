@@ -108,7 +108,7 @@ nav>button {
         font-size: 1.7rem;
     }
 
-    nav > #logo_navbar {
+    nav>#logo_navbar {
         padding: 20px;
     }
 
@@ -344,3 +344,157 @@ nav>button {
 }
 
 /* Inscription */
+
+#container_inscription {
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 70% 1fr;
+    grid-template-rows: auto 1fr auto;
+}
+
+#container_inscription header {
+    grid-column: 1 / 4;
+}
+
+#container_inscription main {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+#container_inscription main>form {
+    height: 70%;
+}
+
+#container_inscription .title {
+    text-align: center;
+    padding: 15px;
+}
+
+#container_inscription .title>p {
+    font-family: 'Dancing Script';
+    color: white;
+}
+
+#container_inscription main form .group_input {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+}
+
+#container_inscription .input_side_inscription {
+    width: 30%;
+}
+
+#container_inscription .input_flex {
+    display: flex;
+    flex-direction: column;
+}
+
+#container_inscription input {
+    line-height: 30px;
+    background-color: #292929;
+    border-color: #1F1F1F;
+    color: white;
+}
+
+#container_inscription form span {
+    font-family: 'Dancing Script';
+    color: #D1604D;
+    text-align: center;
+}
+
+#container_inscription #btn_form_inscription {
+    text-align: center;
+}
+
+#container_inscription #btn_form_inscription>button {
+    height: 50px;
+    width: 130px;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    border-color: white;
+    color: white;
+    background-color: #181818;
+    cursor: pointer;
+}
+
+#container_inscription footer {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    text-align: center;
+    padding: 15px;
+}
+
+#container_inscription footer a {
+    color: #D56F5D;
+}
+
+#container_inscription #img_left_inscription {
+    grid-column: 1 / 2;
+    grid-row: 2 / 4;
+    background-image: url('../img/yasuo.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#container_inscription #img_right_inscription {
+    grid-column: 3 / 4;
+    grid-row: 2 / 4;
+    background-image: url('../img/yasuo2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+@media screen and (max-width: 1300px) {
+    #container_inscription {
+        height: 100vh;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 70%;
+        grid-template-rows: auto 1fr auto;
+    }
+
+    #container_inscription .input_side_inscription {
+        width: 45%;
+    }
+
+}
+
+@media screen and (max-width: 765px) {
+    #container_inscription {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    #container_inscription #img_left_inscription {
+        display: none;
+    }
+
+    #container_inscription #img_right_inscription {
+        display: none;
+    }
+
+    #container_inscription form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+    }
+
+    #container_inscription .group_input {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    #container_inscription #btn_form_inscription {
+        margin-top: 15px;
+    }
+
+    #container_inscription .input_side_inscription {
+        width: 80%;
+    }
+}

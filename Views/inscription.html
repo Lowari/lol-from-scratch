@@ -35,25 +35,57 @@
 
         <main>
             <form action="inscription.php" method="POST">
-                <label for="name">Nom</label>
-                <input type="text" name="name" id="name" placeholder="Nom">
 
-                <label for="first_name">Prénom</label>
-                <input type="text" id="first_name" name="first_name" placeholder="Prénom">
+                <div class="title">
+                    <h3>Inscription</h3>
+                    <p>il ne manque que toi</p>
+                </div>
 
-                <label for="pseudo">Choisis ton pseudo</label>
-                <input type="text" id="pseudo" name="first_name" placeholder="pseudo">
+                <div class="group_input">
+                    <div class="input_side_inscription">
+                        <div class="input_flex">
+                            <label for="name">Nom</label>
+                            <input type="text" name="name" id="name" placeholder="Nom">
+                            <span></span>
+                        </div>
 
-                <label for="email">Ton e-mail</label>
-                <input type="email" id="email" name="email" placeholder="email">
+                        <div class="input_flex">
+                            <label for="first_name">Prénom</label>
+                            <input type="text" id="first_name" name="first_name" placeholder="Prénom">
+                            <span></span>
+                        </div>
 
-                <label for="password">Mot de passe</label>
-                <input type="password" id="password" name="password">
+                        <div class="input_flex">
+                            <label for="pseudo">Choisis ton pseudo</label>
+                            <input type="text" id="pseudo" name="first_name" placeholder="pseudo">
+                            <span></span>
+                        </div>
+                    </div>
 
-                <label for="confirm_password">Confirmation du mot de passe</label>
-                <input type="password" id="confirm_password" name="confirm_password">
+                    <div class="input_side_inscription">
+                        <div class="input_flex">
+                            <label for="email">Ton e-mail</label>
+                            <input type="email" id="email" name="email" placeholder="email">
+                            <span></span>
+                        </div>
 
-                <button type="button">S'incrire</button>
+                        <div class="input_flex">
+                            <label for="password">Mot de passe</label>
+                            <input type="password" id="password" name="password">
+                            <span></span>
+                        </div>
+
+                        <div class="input_flex">
+                            <label for="confirm_password">Confirmation mot de passe</label>
+                            <input type="password" id="confirm_password" name="confirm_password">
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="btn_form_inscription">
+                    <button type="button">S'incrire</button>
+                </div>
             </form>
         </main>
 
@@ -61,6 +93,9 @@
             <p>Déjà inscrit ?</p>
             <a href="connexion.html">Je me connecte !</a>
         </footer>
+
+        <aside id="img_left_inscription"></aside>
+        <aside id="img_right_inscription"></aside>
     </div>
 
     <script src="../assets/js/script.js"></script>
