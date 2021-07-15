@@ -24,7 +24,6 @@ check_empty_input(mail_connexion, error_mail_connexion);
 check_empty_input(password_connexion, error_password_connexion);
 check_symbol(mail_connexion, error_mail_connexion);
 
-
 // fonction globale
 
 /**
