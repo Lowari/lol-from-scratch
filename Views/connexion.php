@@ -16,7 +16,7 @@
     <div id="container_connexion">
         <header>
             <nav>
-                <a href="../index.html" id="logo_navbar"><span>Logo</span></a>
+                <a href="../index.php" id="logo_navbar"><span>Logo</span></a>
                 <div>
                     <form action="index.php" method="POST" hidden>
                         <input type="search" placeholder="Rechercher" hidden disabled>
@@ -24,8 +24,8 @@
                     </form>
                 </div>
                 <ul>
-                    <li><a class="here" href="../index.html">Home</a></li>
-                    <li><a href="connexion.html">Connexion - Inscription</a></li>
+                    <li><a class="here" href="../index.php">Home</a></li>
+                    <li><a href="connexion.php">Connexion - Inscription</a></li>
                 </ul>
                 <button id="burger-menu">
                     <i class="fas fa-chevron-circle-down fa-lg"></i>
@@ -60,7 +60,7 @@
 
         <footer>
             <p>Pas encore inscrit ?</p>
-            <a href="inscription.html">Je m'inscris !</a>
+            <a href="inscription.php">Je m'inscris !</a>
         </footer>
 
         <aside id="img1_left_connexion">

@@ -23,8 +23,8 @@
                 </form>
             </div>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="Views/connexion.html">Connexion - Inscription</a></li>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="Views/connexion.php">Connexion - Inscription</a></li>
             </ul>
             <button id="burger-menu">
                 <i class="fas fa-chevron-circle-down fa-lg"></i>
